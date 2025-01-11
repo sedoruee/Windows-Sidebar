@@ -17,6 +17,3 @@ def run(sidebar, frame):
    在 `frame` 内创建 `tk.Frame` (例如 `app`) 作为你应用的根。
    `app.pack(fill=tk.BOTH, expand=True)` 确保应用填充可用空间。
    所有控件应添加到 `app` 中。
-`sidebar` 对象:**
-避免使用 `tk.Toplevel`。
-注意焦点的处理
