@@ -1,5 +1,5 @@
 # Windows-Sidebar
-A Windows sidebar that can be used independently. It is recommended to use it with [SegumiOS](https://github.com/sedoruee/SegumiOS).
+A Windows sidebar that works standalone, but is best used with [SegumiOS](https://github.com/sedoruee/SegumiOS).
 # Plugin Creation Guide
 **Goal:** Embed a Tkinter application within the sidebar.
 Place plugin files in the `plugins` folder.
