@@ -1,19 +1,19 @@
 # Windows-Sidebar
-一个windows侧边栏,可以独立使用,推荐搭配[SegumiOS](https://github.com/sedoruee/SegumiOS)使用.
-# 插件创建说明书
-目标: 将 Tkinter 应用嵌入侧边栏。
-插件文件放置于 `plugins` 文件夹。
-插件代码示例 ( `plugins/你的插件.py`):
+A Windows sidebar that can be used independently. It is recommended to use it with [SegumiOS](https://github.com/sedoruee/SegumiOS).
+# Plugin Creation Guide
+**Goal:** Embed a Tkinter application within the sidebar.
+Place plugin files in the `plugins` folder.
+**Plugin Code Example** (`plugins/your_plugin_name.py`):
 ```python
 import tkinter as tk
 def run(sidebar, frame):
     app = tk.Frame(frame)
     app.pack(fill=tk.BOTH, expand=True)
-    # 在 app 中构建你的 Tkinter 应用
+    # Build your Tkinter application within 'app'
     # ...
 ```
-关键函数:
-   `run(sidebar, frame)`: 插件入口,`sidebar` 为 `Sidebar` 对象, `frame` 为 `tk.Frame` 容器。
-   在 `frame` 内创建 `tk.Frame` (例如 `app`) 作为你应用的根。
-   `app.pack(fill=tk.BOTH, expand=True)` 确保应用填充可用空间。
-   所有控件应添加到 `app` 中。
+**Key Function:**
+*   `run(sidebar, frame)`: The plugin's entry point. `sidebar` is the `Sidebar` object, and `frame` is the `tk.Frame` container.
+*   Create a `tk.Frame` (e.g., `app`) inside `frame` to serve as the root of your application.
+*   `app.pack(fill=tk.BOTH, expand=True)` ensures the application fills the available space.
+*   All widgets should be added to `app`.
